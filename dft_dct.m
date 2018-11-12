@@ -87,13 +87,13 @@ IDCT=A1*DCT*A2;
 %display
 figure(1)
     subplot(231);
-    imshow(img,[]);
+    imshow(img,[]);title('Original');
     subplot(232);
     imshow(1+log(abs(DFT)),[]);title("DFT");
     subplot(233);
     imshow(abs(IDFT),[]);title("IDFT");
     subplot(234);
-    imshow(img,[]);
+    imshow(img,[]);title('Original');
     subplot(235);
     imshow(1+log(abs(DCT)),[]);title("DCT");
     subplot(236);
